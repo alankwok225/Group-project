@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="Battery Dashboard.css">
+        <title>Title</title>
+    </head>
+    <body>
+        <div class="page-container">
+            <header class="">
+                <nav
+                    class="navbar navbar-expand-md navbar-light bg-light"
+                >
+                    <div class="container">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button
+                            class="navbar-toggler d-lg-none"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavId"
+                            aria-controls="collapsibleNavId"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" aria-current="page"
+                                        >Home
+                                        <span class="visually-hidden">(current)</span></a
+                                    >
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="dropdownId"
+                                        data-bs-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >About</a
+                                    >
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownId"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 1</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 2</a
+                                        >
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="dropdownId"
+                                        data-bs-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >Features</a
+                                    >
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownId"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 1</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 2</a
+                                        >
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="dropdownId"
+                                        data-bs-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >Battery</a
+                                    >
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownId"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 1</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 2</a
+                                        >
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="dropdownId"
+                                        data-bs-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >Maintenance</a
+                                    >
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownId"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 1</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 2</a
+                                        >
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="d-flex my-2 my-lg-0">
+                                <input
+                                    class="form-control me-sm-2"
+                                    type="text"
+                                    placeholder="Search"
+                                />
+                                <button
+                                    class="btn btn-outline-success my-2 my-sm-0"
+                                    type="submit"
+                                >
+                                    Search
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                
+            </header>
+            <main class="main-content">
+                <div class="container">
+                    <div class="dashboard-header">
+                        <div class="header-left">
+                            <h2>Battery Dashboard</h2>
+                        </div>
+                        
+                        <div class="header-right">
+                            <div class="welcome-msg">Welcome back,[User Name]</div>
+                                <div class="updated-info">
+                                    <div>最後更新:2026年8月20日</div>
+                                    <div>last updated:Aug 20,2026</div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <svg class="progress-ring" width="300" height="300" viewBox="0 0 300 300">
+                        <circle class="progress-ring__circle progress-ring__background" 
+                                cx="150" cy="150" r="140"/>
+                        <circle class="progress-ring__circle progress-ring__progress" 
+                                cx="150" cy="150" r="140"
+                                style="stroke-dashoffset: 193.5;"/>
+                     </svg>
+
+                    <div class="text-overlay">
+                        <div class="percent-number">
+                             92<span class="percent-symbol">%</span>
+                        </div>
+                        <div class="status-text">
+                             狀態:良好<br>
+                             Status: Good
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-3">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h6>Charge Cycles</h5>
+                                    <p>187</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h6 class="Estimated-range">Estimated Range</h6>
+                                    <p>412</p>
+                                    <p class="unit">km</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h6>Temperature</h6>
+                                    <p>28°C</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h6>Last Inspection</h6>
+                                    <P>Jul 15</P>
+                                    <p class="year">2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+        
+
+            </main>
+            <footer></footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
