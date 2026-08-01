@@ -238,62 +238,52 @@ p{
 }
 
 
-.ai-insight-card {
+.ai-insight-card{
   width: 100%;
-  background-color: #f2f2f2;          /* 淺灰色背景 */
-  border: 12px solid #3c3c3c;          /* 深灰/黑色的粗邊框 */
-  border-radius: 45px;                /* 大圓角，實現膠囊包覆感 */
-  padding: 32px 48px;                 /* 內部上下與左右的呼吸空間 */
-  
+  background-color:#f2f2f2 ;
+  border: 12px solid #3c3c3c;
+  padding: 32px,48px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;            /* 內容統一靠左對齊 */
-  gap: 16px;                          /* 各元素之間的固定垂直間距 */
+  align-items: start;
+  gap: 16px;
 }
 
-/* 標題樣式 */
-.ai-title {
+.ai-title{
   margin: 0;
   font-size: 2rem;
+  color: #2b2b2b ;
   font-weight: 500;
-  color: #2b2b2b;
   letter-spacing: 0.5px;
 }
 
-/* 分析內文樣式 */
-.ai-text {
+.ai-text{
   margin: 0;
-  font-size: 1.1rem;
+  padding-left: 24px;
+  color:#4a4a4a ;
+  font-size: 1.2rem;
   line-height: 1.5;
-  color: #4a4a4a;
-  padding-left: 24px;                 /* 內縮，還原原圖內文比標題稍微靠右的排版 */
 }
 
-/* 「問 AI 更多」膠囊形狀按鈕 */
-.ai-btn {
-  background-color: #3f3f3f;          /* 深灰按鈕背景 */
-  color: #ffffff;                     /* 白色文字 */
+.ai-btn{
   border: none;
+  border-radius: 50px;
+  background-color:#3f3f3f ;
+  color: #ffffff;
   padding: 10px 24px;
-  border-radius: 50px;                /* 圓角設大，自動變為膠囊按鈕 */
-  font-size: 1.1rem;
   cursor: pointer;
   margin-top: 8px;
-  margin-left: 24px;                  /* 與內文保持相同的左側縮進 */
-  transition: background-color 0.2s, transform 0.1s;
+  margin-left: 24px;
+  transition: background-color 0.2s,transform 0.1s;
 }
 
-/* 按鈕 Hover 與點擊效果 */
-.ai-btn:hover {
+.ai-btn:hover{
   background-color: #262626;
 }
 
-.ai-btn:active {
+.ai-btn:active{
   transform: scale(0.98);
 }
-
-
-
 
 
 
