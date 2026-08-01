@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content{
+    flex: 1;
+}
+
+.dashboard-header{
+    display: flex;
+    justify-content:space-between ;
+    align-items: flex-end;
+}
+
+.header-left{
+    align-self: flex-start; 
+    font-weight: 500;    
+}
+
+.welcome-msg{
+    font-weight: 500;
+}
+
+
+.progress-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        /* SVG 樣式 */
+.progress-ring {
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+
+        /* 所有圓圈的共同樣式 */
+.progress-ring__circle {
+            fill: none;
+            stroke-width: 10;
+        }
+
+        /* 底色圓圈 (灰色) */
+.progress-ring__background {
+            stroke: #e6e6e6;
+        }
+
+        /* 進度圓圈 (藍色) */
+.progress-ring__progress {
+            stroke: #508cb3;
+            stroke-linecap: round;
+            stroke-dasharray: 950;
+            stroke-dashoffset: 950;
+            transition: stroke-dashoffset 1s ease-out;
+        }
+
+        /* 文字容器 */
+.text-overlay {
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 數字 78% 的樣式 */
+.percent-number {
+            font-size: 80px;
+            font-weight: bold;
+            color: #2a2a2a;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        /* 百分比符號 */
+.percent-symbol {
+            font-size: 50px;
+            font-weight: normal;
+        }
+
+        /* 下方狀態文字 */
+.status-text {
+            font-size: 16px;
+            color: #559c7a;
+            line-height: 1.4;
+        }
+
+.battery-car{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.car-right img{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.card{
+    border-radius: 22px; 
+    border: 3px solid lightgrey;  
+}
+
+.card-body{
+    height: 300px;
+    gap: 50px;
+   
+    
+}
+
+h5{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+p{
+    text-align: center;
+    padding-top: 35px;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.card-value{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 40px;
+    font-size: 60px;
+    font-weight: bolder;
+    line-height: 1.0;
+}
+
+.unit{
+    font-size: 35px;
+    padding-left: 50px;
+}
+
+.year{
+    font-size: 50px;
+}
+
+
+
+.trend-card {
+  width: 100%;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.trend-header {
+  margin-bottom: 16px;
+}
+
+.trend-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+.sub-title {
+  font-size: 1.1rem;
+  color: #666666;
+  margin-left: 8px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  border: 2px solid #333333;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.chart-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* 軸線數字文字樣式 */
+.axis-label {
+  font-size: 12px;
+  fill: #666666;
+}
+
+.trend-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.change-badge {
+  background-color: #383838;
+  color: #ffffff;
+  padding: 10px 18px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.badge-sub {
+  font-size: 0.95rem;
+  font-weight: normal;
+  margin-left: 6px;
+  opacity: 0.9;
+}
+
+.history-link {
+  color: #333333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.history-link:hover {
+  text-decoration: underline;
+}
+
+
+.ai-insight-card {
+  width: 100%;
+  background-color: #f2f2f2;          /* 淺灰色背景 */
+  border: 12px solid #3c3c3c;          /* 深灰/黑色的粗邊框 */
+  border-radius: 45px;                /* 大圓角，實現膠囊包覆感 */
+  padding: 32px 48px;                 /* 內部上下與左右的呼吸空間 */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;            /* 內容統一靠左對齊 */
+  gap: 16px;                          /* 各元素之間的固定垂直間距 */
+}
+
+/* 標題樣式 */
+.ai-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #2b2b2b;
+  letter-spacing: 0.5px;
+}
+
+/* 分析內文樣式 */
+.ai-text {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #4a4a4a;
+  padding-left: 24px;                 /* 內縮，還原原圖內文比標題稍微靠右的排版 */
+}
+
+/* 「問 AI 更多」膠囊形狀按鈕 */
+.ai-btn {
+  background-color: #3f3f3f;          /* 深灰按鈕背景 */
+  color: #ffffff;                     /* 白色文字 */
+  border: none;
+  padding: 10px 24px;
+  border-radius: 50px;                /* 圓角設大，自動變為膠囊按鈕 */
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left: 24px;                  /* 與內文保持相同的左側縮進 */
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+/* 按鈕 Hover 與點擊效果 */
+.ai-btn:hover {
+  background-color: #262626;
+}
+
+.ai-btn:active {
+  transform: scale(0.98);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    height: 150px;
+    background-color:#175e7d ;
+}
+

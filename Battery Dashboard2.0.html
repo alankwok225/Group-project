@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="Battery Dashboard.css">
+        <title>Title</title>
+    </head>
+    <body>
+        <div class="page-container">
+            <header class="">
+                <nav
+                    class="navbar navbar-expand-md navbar-light bg-light"
+                >
+                    <div class="container">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button
+                            class="navbar-toggler d-lg-none"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavId"
+                            aria-controls="collapsibleNavId"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" aria-current="page"
+                                        >Home
+                                        <span class="visually-hidden">(current)</span></a
+                                    >
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="dropdownId"
+                                        data-bs-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >About</a
+                                    >
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownId"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 1</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 2</a
+                                        >
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="dropdownId"
+                                        data-bs-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >Features</a
+                                    >
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownId"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 1</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 2</a
+                                        >
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="dropdownId"
+                                        data-bs-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >Battery</a
+                                    >
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownId"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 1</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 2</a
+                                        >
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="dropdownId"
+                                        data-bs-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >Maintenance</a
+                                    >
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownId"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 1</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Action 2</a
+                                        >
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="d-flex my-2 my-lg-0">
+                                <input
+                                    class="form-control me-sm-2"
+                                    type="text"
+                                    placeholder="Search"
+                                />
+                                <button
+                                    class="btn btn-outline-success my-2 my-sm-0"
+                                    type="submit"
+                                >
+                                    Search
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                
+            </header>
+            <main class="main-content">
+                <div class="container">
+                    <div class="dashboard-header">
+                        <div class="header-left">
+                            <h2>Battery Dashboard</h2>
+                        </div>
+                        
+                        <div class="header-right">
+                            <div class="welcome-msg">Welcome back,[User Name]</div>
+                                <div class="updated-info">
+                                    <div>最後更新:2026年8月20日</div>
+                                    <div>last updated:Aug 20,2026</div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="battery-car">
+                    <div class="progress-container h-100">
+                        <svg class="progress-ring" width="500" height="400" viewBox="0 0 300 300">
+                            <circle class="progress-ring__circle progress-ring__background" 
+                                    cx="150" cy="150" r="140"/>
+                            <circle class="progress-ring__circle progress-ring__progress" 
+                                    cx="150" cy="150" r="140"
+                                    style="stroke-dashoffset: 193.5;"/>
+                        </svg>
+
+                        <div class="text-overlay">
+                            <div class="percent-number">
+                                92<span class="percent-symbol">%</span>
+                            </div>
+                            <div class="status-text">
+                                狀態:良好<br>
+                                Status: Good
+                            </div>
+                        </div>
+                    </div>
+                        
+
+                    <div class="car-right h-100">
+                        <img src="car.jpg" alt="car">
+                    </div>
+
+                </div>
+                
+
+                <div class="container">
+                    <div class="row" style="--bs-gutter-x: 5rem; --bs-gutter-y: 5rem;">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card h-100 shadow" >
+                                <div class="card-body">
+                                    <h5>Charge Cycles</h5>
+                                    <div class="card-value">187</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h5>Estimated Range</h5>
+                                    <div class="card-value">
+                                        <span class="num">412</span>
+                                        <span class="unit">km</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h5>Temperature</h5>
+                                    <div class="card-value">28°C</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h5>Last Inspection</h5>
+                                    <div class="card-value">
+                                        <span class="month">Jul 15</span>
+                                        <span class="year">2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="trend-card">
+                    <!-- 標題區域 -->
+                        <div class="trend-header">
+                            <h3 class="trend-title">
+                            30-Day Health Trend <span class="sub-title">過去30日健康度變化</span>
+                            </h3>
+                        </div>
+
+                        <!-- 圖表容器 -->
+                        <div class="chart-container">
+                            <!-- SVG 增加了 0-100% 的 Y 軸與 0-30 天的 X 軸刻度 -->
+                            <svg viewBox="0 0 550 220" preserveAspectRatio="none">
+                            <!-- 網格與座標軸線 -->
+                            <line x1="50" y1="20" x2="50" y2="180" stroke="#ccc" stroke-width="1" />
+                            <line x1="50" y1="180" x2="520" y2="180" stroke="#ccc" stroke-width="1" />
+
+                            <!-- Y 軸數字刻度 (電池健康度 SOH %) -->
+                            <text x="40" y="25" text-anchor="end" class="axis-label">100%</text>
+                            <text x="40" y="65" text-anchor="end" class="axis-label">98%</text>
+                            <text x="40" y="105" text-anchor="end" class="axis-label">96%</text>
+                            <text x="40" y="145" text-anchor="end" class="axis-label">94%</text>
+                            <text x="40" y="185" text-anchor="end" class="axis-label">92%</text>
+
+                            <!-- X 軸數字刻度 (天數 / 時間) -->
+                            <text x="50" y="205" text-anchor="middle" class="axis-label">Day 0</text>
+                            <text x="144" y="205" text-anchor="middle" class="axis-label">Day 6</text>
+                            <text x="238" y="205" text-anchor="middle" class="axis-label">Day 12</text>
+                            <text x="332" y="205" text-anchor="middle" class="axis-label">Day 18</text>
+                            <text x="426" y="205" text-anchor="middle" class="axis-label">Day 24</text>
+                            <text x="520" y="205" text-anchor="middle" class="axis-label">Day 30</text>
+
+                            <!-- 電池衰減折線路徑 -->
+                            <polyline
+                                fill="none"
+                                stroke="#333333"
+                                stroke-width="2.5"
+                                points=""
+                            />
+                            </svg>
+                        </div>
+
+                    <!-- 底部資訊欄 -->
+                        <div class="trend-footer">
+                            <div class="change-badge">
+                            Change: -0.3% (vs last month) <span class="badge-sub">變化:-0.3% (較上月)</span>
+                            </div>
+                            <a href="#" class="history-link">View Full History &rarr;</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container"><hr></div>
+                
+
+            <div class="container">
+                <div class="ai-insight-card">
+                    <!-- 頂部標題 -->
+                    <h3 class="ai-title">Amperio AI Insight</h3>
+
+                    <!-- 中間 AI 分析內容 -->
+                    <p class="ai-text">
+                        "Your battery is in good condition with normal cycle usage.<br>
+                        We recommend your next check-up in 30 days to maintain optimal health."
+                    </p>
+
+                    <!-- 底部膠囊按鈕 -->
+                    <button class="ai-btn">問 AI 更多</button>
+                </div>
+            </div>
+
+
+
+        
+
+            </main>
+            <footer></footer>
+        </div>
+        <script src="Battery Dashboard.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
