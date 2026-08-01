@@ -242,7 +242,8 @@ p{
   width: 100%;
   background-color:#f2f2f2 ;
   border: 12px solid #3c3c3c;
-  padding: 32px,48px;
+  border-radius:45px;
+  padding: 32px 48px;
   display: flex;
   flex-direction: column;
   align-items: start;
